@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Classes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <header>
+        <ul class="nav text-bg-dark p-3">
+          <a class="navbar-brand" href="teacher.html"><h3>TSRP</h3></a>
+          <li class="nav-item">
+            <a class="nav-link" href="teacher.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="t_profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="classes.html">Classes</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="club-activities.html">Clubs/Activities</a>
+          </li>
+          <input type="text" style="margin-left: 1050px;" placeholder="Search for...."></input>
+          <a href="t_profile.html" style="margin-left: 10px;"><img style="width: 40px; height: auto;" src="Icons/profile icon.png" alt="p icon"></a>
+          <div class="dropdown" style="margin-left: 15px; margin-top: 2px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Settings
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Account Settings</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="index.html">Logout</a></li>
+            </ul>
+          </div>
+      </header>
+    <body style="background-color: grey; display: flex; flex-direction: column; justify-content: center;">
+        <main>
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Add Class
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Department Name</span>
+              <input type="text" class="form-control" placeholder="Ex: CSC | BIO | etc" aria-label=">Department Name" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Class ID</span>
+              <input type="text" class="form-control" placeholder="Ex: CSC-362 -> 362 " aria-label="Class ID" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Section #</span>
+              <input type="text" class="form-control" placeholder="01, 02, etc.." aria-label="Section #" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Location</span>
+              <input type="text" class="form-control" placeholder="Ex: PET-224" aria-label="Location" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Time</span>
+              <input type="text" class="form-control" placeholder="Ex: M/W/F 1:00PM-2:15PM" aria-label="Time" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Total Seats</span>
+              <input type="text" class="form-control" placeholder="#" aria-label="Total Seats" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Books</span>
+              <input type="text" class="form-control" placeholder="Great Gatsby, Harry Potter, etc. (Seperate by ,)" aria-label="Total Seats" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Online Resources</span>
+              <input type="text" class="form-control" placeholder="www.internetarchive.com, etc. (Seperate by ,)" aria-label="Total Seats" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Description</span>
+              <textarea class="form-control" placeholder="......" aria-label="Description"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+          <button type="button" class="btn btn-primary" style="margin-top: 20px;">Edit</button>
+          <div class="container" style="background-color: aliceblue; border-radius: 5px;">
+              <h1>Classes Taught:</h1>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      BIO-250-01
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Location:</strong><p> NIB-201</p><br>
+                      <strong>Time:</strong><p> M/W/F 2:30PM-3:45</p><br>
+                      <strong>Filled Seats:</strong><p> 19/20</p><br>
+                      <strong>Books:</strong><p> N/A</p><br>
+                      <strong>Online Resources:</strong><p> N/A</p><br>
+                      <strong>Description:</strong><p> Filler</p><br>                    
+                  </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      BIO-101-03
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Location:</strong><p> SULV-302</p><br>
+                      <strong>Time:</strong><p> T/TH 3:30PM-5:30PM</p><br>
+                      <strong>Filled Seats:</strong><p> 22/25</p><br>
+                      <strong>Books:</strong><p> N/A</p><br>
+                      <strong>Online Resources:</strong><p> N/A</p><br>
+                      <strong>Description:</strong><p> Filler</p><br>                    
+                  </div>
+                </div>             
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    BIO-335-01
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Location:</strong><p> NIB-221</p><br>
+                    <strong>Time:</strong><p> M/W/F 12:30PM-1:45PM</p><br>
+                    <strong>Filled Seats:</strong><p> 22/25</p><br>
+                    <strong>Books:</strong><p> N/A</p><br>
+                    <strong>Online Resources:</strong><p> N/A</p><br>
+                    <strong>Description:</strong><p> Filler</p><br>
+                  </div>
+                </div>
+              </div>   
+            </div>         
+          </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    </body>
+    <footer style="display: flex; justify-content: center;">
+      <p>Copyright © 2023 TSRP. All rights reserved.</p>  
+    </footer>
+</html>
